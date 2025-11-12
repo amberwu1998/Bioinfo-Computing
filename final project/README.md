@@ -134,33 +134,6 @@ msms-viewer/
 
 **Visualization Approach**: Stem plots were chosen over alternative plot types because they clearly show peak heights and positions, which is crucial for spectral interpretation.
 
-## Validation and Testing
-
-The program has been validated by:
-
-- Comparison with reference spectra from mass spectrometry textbooks
-- Testing edge cases including peptides with terminal modifications and boundary conditions
-- Verification of mass calculations against theoretical ion databases
-- Handling of peaks near tolerance boundaries
-
-## Limitations and Future Enhancements
-
-### Current Limitations
-
-- Does not account for neutral losses (H₂O, NH₃) that occur in real peptide fragmentation
-- Single-charge ion model only (+1 charge)
-- No support for modified amino acids (phosphorylation, methylation, etc.)
-- Limited to MS/MS spectra; cannot visualize full MS scan data
-
-### Potential Enhancements
-
-- Support for multiply-charged ions
-- Neutral loss prediction and visualization
-- Modified amino acid support
-- Statistical scoring of peptide-spectrum matches
-- Batch processing of multiple spectra
-- Integration with peptide database search tools
-
 ## Scientific Background
 
 ### Mass Spectrometry Proteomics
@@ -180,34 +153,7 @@ By analyzing the pattern of observed ions, researchers can determine the peptide
 - **array**: Standard library efficient array operations
 - **gzip**: Standard library compression support
 
-## Contributing
-
-If you'd like to contribute to this project, please feel free to fork the repository and submit a pull request. Areas of interest include:
-
-- Support for additional ion types (a-ions, c-ions, etc.)
-- Performance optimizations for large files
-- Enhanced visualization options
-- Additional file format support
-
-## License
-
-This project is provided as educational material. Please check with your institution for licensing requirements.
-
-## Author
-
-Developed as a class project in bioinformatics/computational biology.
-
-## Acknowledgments
-
-- Built with Python's standard library and matplotlib
-- Inspired by professional mass spectrometry visualization tools
-- mzXML format specification from ProteoWizard project
-
 ## References
 
 - Steen, H., & Mann, M. (2004). The ABC's (and XYZ's) of peptide sequencing. *Nature Reviews Molecular Cell Biology*, 5(9), 699-711.
 - mzXML format: https://sashimi.sourceforge.net/schema_revision/mzXML_3.2.pdf
-
----
-
-**Note**: This tool is designed for educational purposes and basic analysis. For production-level proteomics analysis, consider using established tools like Mascot, SEQUEST, or X!Tandem with appropriate statistical validation.
